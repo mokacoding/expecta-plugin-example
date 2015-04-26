@@ -14,7 +14,9 @@
 		3FFF4EC21AED742F006BF8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF4EC01AED742F006BF8B9 /* Main.storyboard */; };
 		3FFF4EC41AED742F006BF8B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF4EC31AED742F006BF8B9 /* Images.xcassets */; };
 		3FFF4EC71AED742F006BF8B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF4EC51AED742F006BF8B9 /* LaunchScreen.xib */; };
-		3FFF4ED31AED742F006BF8B9 /* expecta_plugins_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4ED21AED742F006BF8B9 /* expecta_plugins_exampleTests.m */; };
+		3FFF4ED31AED742F006BF8B9 /* SampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4ED21AED742F006BF8B9 /* SampleSpec.m */; };
+		3FFF4EDE1AED7901006BF8B9 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4EDD1AED7901006BF8B9 /* Fruit.m */; };
+		3FFF4EE11AED790C006BF8B9 /* Orange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4EE01AED790C006BF8B9 /* Orange.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,11 @@
 		3FFF4EC61AED742F006BF8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3FFF4ECC1AED742F006BF8B9 /* expecta-plugins-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "expecta-plugins-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF4ED11AED742F006BF8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FFF4ED21AED742F006BF8B9 /* expecta_plugins_exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = expecta_plugins_exampleTests.m; sourceTree = "<group>"; };
+		3FFF4ED21AED742F006BF8B9 /* SampleSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleSpec.m; sourceTree = "<group>"; };
+		3FFF4EDC1AED7901006BF8B9 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		3FFF4EDD1AED7901006BF8B9 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		3FFF4EDF1AED790C006BF8B9 /* Orange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orange.h; sourceTree = "<group>"; };
+		3FFF4EE01AED790C006BF8B9 /* Orange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orange.m; sourceTree = "<group>"; };
 		6489AF620C35FDD8983C4BB6 /* Pods-expecta-plugins-exampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expecta-plugins-exampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-expecta-plugins-exampleTests/Pods-expecta-plugins-exampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEDB12CDAA4FAA5370A8E56A /* libPods-expecta-plugins-exampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-expecta-plugins-exampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8ED629FF29686F900BF1C47 /* Pods-expecta-plugins-exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-expecta-plugins-exampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-expecta-plugins-exampleTests/Pods-expecta-plugins-exampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,8 +130,12 @@
 		3FFF4ECF1AED742F006BF8B9 /* expecta-plugins-exampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FFF4ED21AED742F006BF8B9 /* expecta_plugins_exampleTests.m */,
+				3FFF4ED21AED742F006BF8B9 /* SampleSpec.m */,
 				3FFF4ED01AED742F006BF8B9 /* Supporting Files */,
+				3FFF4EDC1AED7901006BF8B9 /* Fruit.h */,
+				3FFF4EDD1AED7901006BF8B9 /* Fruit.m */,
+				3FFF4EDF1AED790C006BF8B9 /* Orange.h */,
+				3FFF4EE01AED790C006BF8B9 /* Orange.m */,
 			);
 			path = "expecta-plugins-exampleTests";
 			sourceTree = "<group>";
@@ -321,7 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FFF4ED31AED742F006BF8B9 /* expecta_plugins_exampleTests.m in Sources */,
+				3FFF4EDE1AED7901006BF8B9 /* Fruit.m in Sources */,
+				3FFF4EE11AED790C006BF8B9 /* Orange.m in Sources */,
+				3FFF4ED31AED742F006BF8B9 /* SampleSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
