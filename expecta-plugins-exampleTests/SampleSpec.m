@@ -29,19 +29,22 @@ describe(@"The expecta matchers libray", ^{
             it(@"can test for count, emptiness and contained objects", ^{
                 NSArray *anArray = @[ @"red", @"yellow", @"pink", @"black", @"blue" ];
 
-                // expect(anArray).toNot.beEmpty();
+                expect(anArray).toNot.beEmpty();
                 expect(anArray).to.haveCountOf(5);
                 expect(anArray).to.contain(@"black");
             });
         });
 
         context(@"when it comes to strings", ^{
-            it(@"is not gonna disappoint you", ^{
-                NSString *aString = @"lorem ipsum dolor sit amet";
+            __block NSString *aString = @"lorem ipsum dolor sit amet";
 
+            it(@"is not gonna disappoint you", ^{
                 expect(aString).to.beginWith(@"lorem");
                 expect(aString).to.endWith(@"amet");
-                // TODO: RegEx
+            });
+
+            it(@"can even match using regular expressions", ^{
+                expect(aString).to.match(@"lorem i.* dolor|marameo");
             });
         });
 
@@ -53,7 +56,10 @@ describe(@"The expecta matchers libray", ^{
         context(@"and there's more", ^{
             expect([Orange class]).to.beSubclassOf([Fruit class]);
             expect([Orange class]).to.respondTo(@selector(squeeze));
-            // TODO: expect(^{}).to.raiseAny();
+            expect(^{
+                NSMutableArray *immutableArray = [NSArray array];
+                [immutableArray addObject:@"a"];
+            }).to.raiseAny();
         });
     });
 });
