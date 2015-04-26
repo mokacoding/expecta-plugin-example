@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2ECD3FE287FF3DE211A2CF77 /* libPods-expecta-plugins-exampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDB12CDAA4FAA5370A8E56A /* libPods-expecta-plugins-exampleTests.a */; };
+		3FA511691AED839D00A73732 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA511681AED839D00A73732 /* Pizza.m */; };
 		3FFF4EB91AED742F006BF8B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4EB81AED742F006BF8B9 /* main.m */; };
 		3FFF4EBC1AED742F006BF8B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4EBB1AED742F006BF8B9 /* AppDelegate.m */; };
 		3FFF4EBF1AED742F006BF8B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4EBE1AED742F006BF8B9 /* ViewController.m */; };
 		3FFF4EC21AED742F006BF8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF4EC01AED742F006BF8B9 /* Main.storyboard */; };
 		3FFF4EC41AED742F006BF8B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF4EC31AED742F006BF8B9 /* Images.xcassets */; };
 		3FFF4EC71AED742F006BF8B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF4EC51AED742F006BF8B9 /* LaunchScreen.xib */; };
-		3FFF4ED31AED742F006BF8B9 /* SampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4ED21AED742F006BF8B9 /* SampleSpec.m */; };
+		3FFF4ED31AED742F006BF8B9 /* ExpectaPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4ED21AED742F006BF8B9 /* ExpectaPost.m */; };
 		3FFF4EDE1AED7901006BF8B9 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4EDD1AED7901006BF8B9 /* Fruit.m */; };
 		3FFF4EE11AED790C006BF8B9 /* Orange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF4EE01AED790C006BF8B9 /* Orange.m */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FA511671AED839D00A73732 /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		3FA511681AED839D00A73732 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 		3FFF4EB31AED742F006BF8B9 /* expecta-plugins-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "expecta-plugins-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF4EB71AED742F006BF8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FFF4EB81AED742F006BF8B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,7 +45,7 @@
 		3FFF4EC61AED742F006BF8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3FFF4ECC1AED742F006BF8B9 /* expecta-plugins-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "expecta-plugins-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF4ED11AED742F006BF8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FFF4ED21AED742F006BF8B9 /* SampleSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleSpec.m; sourceTree = "<group>"; };
+		3FFF4ED21AED742F006BF8B9 /* ExpectaPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpectaPost.m; sourceTree = "<group>"; };
 		3FFF4EDC1AED7901006BF8B9 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
 		3FFF4EDD1AED7901006BF8B9 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
 		3FFF4EDF1AED790C006BF8B9 /* Orange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orange.h; sourceTree = "<group>"; };
@@ -130,12 +133,14 @@
 		3FFF4ECF1AED742F006BF8B9 /* expecta-plugins-exampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FFF4ED21AED742F006BF8B9 /* SampleSpec.m */,
+				3FFF4ED21AED742F006BF8B9 /* ExpectaPost.m */,
 				3FFF4ED01AED742F006BF8B9 /* Supporting Files */,
 				3FFF4EDC1AED7901006BF8B9 /* Fruit.h */,
 				3FFF4EDD1AED7901006BF8B9 /* Fruit.m */,
 				3FFF4EDF1AED790C006BF8B9 /* Orange.h */,
 				3FFF4EE01AED790C006BF8B9 /* Orange.m */,
+				3FA511671AED839D00A73732 /* Pizza.h */,
+				3FA511681AED839D00A73732 /* Pizza.m */,
 			);
 			path = "expecta-plugins-exampleTests";
 			sourceTree = "<group>";
@@ -331,9 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA511691AED839D00A73732 /* Pizza.m in Sources */,
 				3FFF4EDE1AED7901006BF8B9 /* Fruit.m in Sources */,
 				3FFF4EE11AED790C006BF8B9 /* Orange.m in Sources */,
-				3FFF4ED31AED742F006BF8B9 /* SampleSpec.m in Sources */,
+				3FFF4ED31AED742F006BF8B9 /* ExpectaPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
