@@ -59,7 +59,8 @@ describe(@"The expecta matchers libray", ^{
     context(@"and there's more", ^{
         it(@"allows us to asert object's properties", ^{
             expect([Orange class]).to.beSubclassOf([Fruit class]);
-            expect([Orange class]).to.respondTo(@selector(squeeze));
+            Orange *anOrange = [[Orange alloc] init];
+            expect(anOrange).to.respondTo(@selector(squeeze));
         });
 
         it(@"and even test for code that raises exceptions", ^{

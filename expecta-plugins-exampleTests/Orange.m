@@ -2,4 +2,6 @@
 
 @implementation Orange
 
+- (void)squeeze {}
+
 @end
