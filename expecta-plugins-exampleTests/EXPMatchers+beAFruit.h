@@ -1,5 +1,5 @@
 //
-//  EXPMatchers+isAFruit.h
+//  EXPMatchers+beAFruit.h
 //  expecta-plugins-example
 //
 //  Created by Giovanni on 3/05/2015.
@@ -8,4 +8,4 @@
 
 #import "Expecta.h"
 
-EXPMatcherInterface(isAFruit, (void))
+EXPMatcherInterface(beAFruit, (void))

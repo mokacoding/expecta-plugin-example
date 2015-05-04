@@ -1,15 +1,15 @@
 //
-//  EXPMatchers+isAFruit.m
+//  EXPMatchers+beAFruit.m
 //  expecta-plugins-example
 //
 //  Created by Giovanni on 3/05/2015.
 //  Copyright (c) 2015 mokacoding. All rights reserved.
 //
 
-#import "EXPMatchers+isAFruit.h"
+#import "EXPMatchers+beAFruit.h"
 #import "Fruit.h"
 
-EXPMatcherImplementationBegin(isAFruit, (void)) {
+EXPMatcherImplementationBegin(beAFruit, (void)) {
     BOOL actualIsNil = actual == nil;
 
     prerequisite(^BOOL {
